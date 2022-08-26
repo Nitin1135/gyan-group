@@ -1,0 +1,10 @@
+.imagebg{
+    background-color: #000;
+    opacity: 0.3;
+}
+.header-s3.has-fixed .modal-sticky-header{
+background-color: #4a7dbc;
+}
+#color-switch{
+    display: none !important;
+}
