@@ -276,18 +276,58 @@
 	});
 
 	// color switch
-	n.append('<div id="color-switch" class="colorPanel cp-custom"><a class="cart" href="https://themeforest.net/item/industrial-industry-and-engineering-services-template/20439885?ref=softnio" target="_blank"><i class="fa fa-cart-arrow-down fa-fw"></i></a><a id="cpToggle" href="#"><i class="fa fa-cog fa-spin fa-fw"></i></a><ul></ul></div>');
-	var O = e("#color-switch");
-	O.length > 0 && O.ColorPanel({
-		styleSheet: "#style-css",
-		animateContainer: ".site-body",
-		colors: {
-			"#1863AB": "css/style.css",
-			"#F5574A": "css/style-red.css",
-			"#46a0f3": "css/style-bluelight.css",
-			"#f26d3f": "css/style-orange.css",
-			"#26B05A": "css/style-green.css",
-			"#fAAB38": "css/style-bitcoin.css"
+	// n.append('<div id="color-switch" class="colorPanel cp-custom"><a class="cart" href="https://themeforest.net/item/industrial-industry-and-engineering-services-template/20439885?ref=softnio" target="_blank"><i class="fa fa-cart-arrow-down fa-fw"></i></a><a id="cpToggle" href="#"><i class="fa fa-cog fa-spin fa-fw"></i></a><ul></ul></div>');
+	// var O = e("#color-switch");
+	// O.length > 0 && O.ColorPanel({
+	// 	styleSheet: "#style-css",
+	// 	animateContainer: ".site-body",
+	// 	colors: {
+	// 		"#1863AB": "css/style.css",
+	// 		"#F5574A": "css/style-red.css",
+	// 		"#46a0f3": "css/style-bluelight.css",
+	// 		"#f26d3f": "css/style-orange.css",
+	// 		"#26B05A": "css/style-green.css",
+	// 		"#fAAB38": "css/style-bitcoin.css"
+	// 	}
+	// })
+
+	// Counter block 
+	function visible(partial) {
+		var $t = partial,
+			$w = jQuery(window),
+			viewTop = $w.scrollTop(),
+			viewBottom = viewTop + $w.height(),
+			_top = $t.offset().top,
+			_bottom = _top + $t.height(),
+			compareTop = partial === true ? _bottom : _top,
+			compareBottom = partial === true ? _top : _bottom;
+	
+		return ((compareBottom <= viewBottom) && (compareTop >= viewTop) && $t.is(':visible'));
+	
+	}
+	
+	$(window).scroll(function(){
+	
+	  if(visible($('.count-digit')))
+		{
+		  if($('.count-digit').hasClass('counter-loaded')) return;
+		  $('.count-digit').addClass('counter-loaded');
+		  
+	$('.count-digit').each(function () {
+	  var $this = $(this);
+	  jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+		duration: 5000,
+		easing: 'swing',
+		step: function () {
+		  $this.text(Math.ceil(this.Counter));
+		}
+	  });
+	});
 		}
 	})
+	
+		
+
+
+
 }(jQuery);

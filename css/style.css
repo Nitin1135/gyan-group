@@ -1,10 +1,10 @@
 .imagebg{
     background-color: #000;
-    opacity: 0.3;
+    opacity: 0.3 !important;
 }
 .header-s3.has-fixed .modal-sticky-header{
 background-color: #4a7dbc;
 }
-#color-switch{
-    display: none !important;
+.product-enquiry .form-quote .form-control.txtarea{
+    height: 100px;
 }

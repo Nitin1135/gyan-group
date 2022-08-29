@@ -69,7 +69,7 @@
 								<li><a href="about-us.html">Company Profile</a></li>
 								<li><a href="about-us.html">Why Gyan Group</a></li>
 								<li><a href="about-us.html">Group Of Companies </a></li>
-								<li><a href="about-us.html">Achievements/ Milestones</a></li>
+								<li><a href="achievements-milestones.html">Achievements/ Milestones</a></li>
 								<li><a href="quality-policy.html">Quality Policy</a></li>
 							</ul>
 						</li>
@@ -81,9 +81,9 @@
 								<li><a href="product-single.html">DYES</a></li>
 							</ul>
 						</li>
-						<li class="dropdown">
+						<!-- <li class="dropdown">
 							<a href="facilities.html">Facilities</a>
-						</li>
+						</li> -->
 						<li><a href="we-export.html">We Export</a></li>
 						<li><a href="blog.html">Blog</a></li>
 						<li><a href="contact.html">Contact </a></li>
@@ -100,7 +100,7 @@
 				<div class="content row">
 
 					<div class="imagebg">
-						<img src="image/banner-inside-c.jpg" alt="">
+						<img src="image/banner-inside-g.jpg" alt="">
 					</div>
 					<div class="banner-text">
 						<h1 class="page-title">Products details </h1>
@@ -135,16 +135,44 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore
                         et dolore magna aliqua quis nostrud. exercitation. ullamconaliquip ex ea commodo consequat.
                     </p>
-                    <ul class="list-style">
+					<div class="table-responsive">
+                        <table class="table">
+                            <!-- <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Data</th>
+                                    <th>Range</th>
+                                    <th>Dimension</th>
+                                    <th>Value</th>
+                                    <th>Capacity</th>
+                                </tr>
+                            </thead> -->
+                            <tbody>
+                                <tr>
+                                    <th>Name</th>
+                                    <td>34</td>
+                                </tr>
+                                <tr>
+									<th>Name</th>
+                                    <td>74</td>
+                                </tr>
+                                <tr>
+                                    <th>Name</th>
+                                    <td>24</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- <ul class="list-style">
                         <li><strong>Magna aliqua</strong> ensures uninte eppted</li>
                         <li><strong>Esusmod dolor</strong> sit always ensures</li>
                         <li><strong>Consectetur</strong> adipiscing normal valve seats</li>
-                    </ul>
+                    </ul> -->
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat.</p>
                     
-                        <p><a class="btn" href="enquiry.html">Enquiry Now</a></p>
+                        <p><a class="btn" href="#" data-toggle="modal" data-target="#myModal">Enquiry Now</a></p>
 
                     </div>
                 </div>
@@ -152,10 +180,13 @@
             </div>
 
 
-            <div class="products-details row">
+            <div class="products-details row mt-x5">
                 <div class="col-md-12">
-                    <h3>Specification</h3>
-                    <div class="table-responsive">
+                    <h3>Application</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <!-- <div class="table-responsive">
                         <table class="table">
                             <thead>
                                 <tr>
@@ -194,7 +225,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
+                    </div> -->
                 </div>
                
 
@@ -290,13 +321,76 @@
 					<p>Gyan Group &copy; 2022 All Right Reserved </p>
 				</div>
 				<div class="site-by col-sm-5 al-right">
-					<p>Template Made by <a href="http://softnio.com/" target="_blank">Proactii.com.</a></p>
+					<p>Template Made by <a href="http://proactii.com/" target="_blank">Proactii.com.</a></p>
 				</div>
 
 			</div>
 		</div>
 	</div>
 	<!-- End Copyright -->
+
+
+	<!--Start Products enqury modal  -->
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+	Launch demo modal
+  </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade product-enquiry" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<!-- <div class="modal-header">
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+		</div> -->
+		<div class="modal-body">
+			<div class="wgs-box wgs-quoteform">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h3 class="wgs-heading">Products Enquiry</h3>
+				<div class="wgs-content">
+					<p>If you have any questions or would like to book a session please contact us.</p>
+					<form id="contact-us" class="form-quote" action="http://demo.themenio.com/industrial/form/contact.php" method="post" novalidate="novalidate">
+						<div class="form-results"></div>
+						<div class="form-group">
+							<div class="form-field">
+								<input name="contact-name" type="text" placeholder="Name *" class="form-control required" aria-required="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="form-field">
+								<input name="contact-email" type="email" placeholder="Email *" class="form-control required email" aria-required="true">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="form-field form-m-bttm">
+								<input name="contact-phone" type="text" placeholder="Phone" class="form-control">
+							</div>
+						</div>
+						<!-- <div class="form-group">
+							<div class="form-field">
+								<input name="contact-service" type="text" placeholder="Interest of Service" class="form-control">
+							</div>
+						</div> -->
+						<div class="form-group">
+							<div class="form-field">
+								<textarea name="contact-message" placeholder="Messages *" class="txtarea form-control required" aria-required="true"></textarea>
+							</div>
+						</div>
+						<input type="text" class="hidden" name="form-anti-honeypot" value="">
+						<button type="submit" class="btn btn-alt sb-h">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="modal-footer">
+		  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Save changes</button>
+		</div> -->
+	  </div>
+	</div>
+  </div>
+	<!--End  Products enqury modal  -->
 	
 	<!-- Google Recaptcha -->
 	<script src="../../www.google.com/recaptcha/api.js" async defer></script>
