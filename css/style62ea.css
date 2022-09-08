@@ -9077,3 +9077,23 @@ h3.heading-lead+.lead {
     margin-top: 25px;
     margin-bottom: 25px
 }
+.call-action.has-parallax .cta-block.synthesis-block{
+    padding: 60px 0 !important;
+}
+.desktop-wsp{
+    display: block;
+}
+.mobile-wsp{
+    display: none !important;
+}
+
+
+
+@media (min-width:320px) and (max-width:767px){
+    .desktop-wsp{
+        display: none !important;
+    }
+    .mobile-wsp{
+        display: block !important;
+    }
+}
